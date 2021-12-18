@@ -32,6 +32,8 @@ export const Text1 = styled.p`
 `;
 export const Text2 = styled.p`
   font-size: 20px;
+  font-family: "Avant Garde BQ", sans-serif;
+  padding-right: 98px;
 `;
 
 export const Mockup1 = styled.img`
@@ -43,6 +45,64 @@ export const Mockup1 = styled.img`
 // main content 2
 
 export const MainContent2 = styled.div`
-  background: red;
-  height: 658px;
+  background: transparent linear-gradient(237deg, #f5f5f5 0%, #d8d8d8 100%) 0%
+    0% no-repeat padding-box;
+  height: 580px;
+  display: flex;
+  padding: 60px 20px;
+  align-items: center;
+`;
+
+export const Mockup2 = styled.img`
+  height: 435px;
+`;
+export const ContentTextArea2 = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0 40px 90px;
+  width: 43%;
+  height: 480px;
+`;
+
+// main content 3
+
+export const MainContent3 = styled.div`
+  background: transparent
+    linear-gradient(90deg, #d8d3d3 0%, #f9fafa 64%, #f9fafa 90%, #ffffff 100%)
+    0% 0% no-repeat padding-box;
+  height: 646px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 132px;
+`;
+export const ContentTextArea3 = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 46%;
+  height: 480px;
+`;
+export const Div3d = styled.div`
+  width: 332px;
+  height: 563px;
+  perspective: 1000px;
+`
+
+export const Mockup3 = styled.img`
+  width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+  transform: rotateY(333deg);
+`;
+export const Case = styled.img`
+  position: absolute;
+  width: 2384px;
+  top: 500px;
+  left: 200px;
+  transform-style: preserve-3d;
+  transform: rotateY(333deg);
 `;
