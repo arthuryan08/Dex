@@ -207,3 +207,62 @@ export const InputButton = styled.button`
   background-color: #111111;
   margin-bottom: 25px;
 `;
+
+// Footer
+
+export const Footer = styled.footer`
+  display: flex;
+  height: 310px;
+  background-color: #111111;
+  color: #c4c4c4;
+  justify-content: space-between;
+  padding: 50px 70px 20px 70px;
+`;
+export const FooterDivLogo = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+export const LogoArea = styled.div``;
+
+export const Logo = styled.img`
+  height: 40px;
+  margin-bottom: 10px;
+`;
+
+export const LogoText = styled.p`
+  margin-top: 3px;
+  font-size: 13px;
+`;
+
+export const SocialArea = styled.div``;
+
+export const Link = styled.a`
+  margin-right: 10px;
+`;
+
+export const Icon = styled.img`
+  height: 30px;
+`;
+
+export const FooterDivInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const DivInfoTitle = styled.p`
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+`;
+
+export const DivInfoContent = styled.a`
+  margin: 15px 0 0 0;
+  text-decoration: none;
+  font-size: 17px;
+  color: #c4c4c4;
+  &:hover {
+    color: #ffffff;
+  }
+`;
