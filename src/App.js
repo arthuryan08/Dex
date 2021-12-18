@@ -77,6 +77,23 @@ export const App = () => {
           <C.TipText2 href="#">See more &#8594;</C.TipText2>
         </C.TipContent>
       </C.TipsBar>
+      <C.SignUpArea>
+        <C.SignUpText1>Sign up for free</C.SignUpText1>
+        <C.SignUpText2>
+          JOIN THE THOUSANDS OF BUSINESS LEADERS WINNING WITH GROW
+        </C.SignUpText2>
+        <C.InputArea>
+          <C.InputText>First Name*</C.InputText>
+          <C.Input type={"text"} />
+          <C.InputText>Last Name*</C.InputText>
+          <C.Input type={"text"} />
+          <C.InputText>Work Email*</C.InputText>
+          <C.Input type={"email"} />
+          <C.InputText>Mobile Number*</C.InputText>
+          <C.Input type={"number"} />
+          <C.InputButton>Submit</C.InputButton>
+        </C.InputArea>
+      </C.SignUpArea>
     </C.Container>
   );
 };

@@ -138,3 +138,72 @@ export const TipText2 = styled.a`
   text-decoration: none;
   color: #ffffff;
 `;
+
+//Sign Up Area
+
+export const SignUpArea = styled.div`
+  height: 647px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+export const SignUpText1 = styled.p`
+  font-size: 55px;
+  font-weight: bold;
+  color: #111111;
+  padding: 20px;
+  &::after {
+    content: "";
+    height: 7px;
+    width: 52px;
+    margin-left: 175px;
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`;
+
+export const SignUpText2 = styled.p`
+  font-size: 20px;
+  font-family: "Avant Garde BQ", sans-serif;
+`;
+
+export const InputArea = styled.div`
+  width: 550px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+`;
+
+export const InputText = styled.p`
+  font-size: 18px;
+  margin-bottom: -19px;
+`;
+
+export const Input = styled.input`
+  width: 100%;
+  height: 50px;
+  font-size: 19px;
+  padding-left: 10px;
+  ::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  ::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+`;
+
+export const InputButton = styled.button`
+  padding: 10px 15px;
+  font-size: 17px;
+  font-family: "Century Gothic", sans-serif;
+  border: none;
+  color: #ffffff;
+  background-color: #111111;
+  margin-bottom: 25px;
+`;
