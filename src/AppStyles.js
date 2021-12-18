@@ -51,6 +51,9 @@ export const MainContent2 = styled.div`
   display: flex;
   padding: 60px 20px;
   align-items: center;
+  justify-content: space-between;
+}
+
 `;
 
 export const Mockup2 = styled.img`
@@ -61,7 +64,7 @@ export const ContentTextArea2 = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 0 40px 90px;
+  padding: 80px 40px 40px 40px;
   width: 43%;
   height: 480px;
 `;
@@ -84,25 +87,26 @@ export const ContentTextArea3 = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   width: 46%;
-  height: 480px;
+  height: 434px;
 `;
 export const Div3d = styled.div`
-  width: 332px;
-  height: 563px;
+  width: 411px;
+  height: 565px;
   perspective: 1000px;
-`
+  position: absolute;
+  right: 10%;
+`;
 
 export const Mockup3 = styled.img`
-  width: 100%;
-	height: 100%;
-	transform-style: preserve-3d;
-  transform: rotateY(333deg);
+  width: 339px;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotate3d(1, -9, 1, 35deg);
 `;
 export const Case = styled.img`
   position: absolute;
-  width: 2384px;
-  top: 500px;
-  left: 200px;
-  transform-style: preserve-3d;
-  transform: rotateY(333deg);
+  z-index: 1;
+  width: 414px;
+  top: 1245px;
+  right: 10%;
 `;
