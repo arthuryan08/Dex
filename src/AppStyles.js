@@ -90,8 +90,8 @@ export const ContentTextArea3 = styled.div`
   height: 434px;
 `;
 export const Div3d = styled.div`
-  width: 411px;
-  height: 565px;
+  width: 409px;
+  height: 559px;
   perspective: 1000px;
   position: absolute;
   right: 10%;
@@ -106,7 +106,35 @@ export const Mockup3 = styled.img`
 export const Case = styled.img`
   position: absolute;
   z-index: 1;
-  width: 414px;
-  top: 1245px;
+  width: 410px;
+  top: 1248px;
   right: 10%;
+`;
+
+//TipsBar
+
+export const TipsBar = styled.div`
+  background-color: #111111;
+  display: flex;
+  height: 165px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 30px;
+  color: #ffffff;
+  z-index: 2;
+`;
+export const TipContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 306px;
+  height: 90px;
+`;
+export const TipText1 = styled.p`
+  font-size: 19px;
+  font-weight: bold;
+`;
+export const TipText2 = styled.a`
+  text-decoration: none;
+  color: #ffffff;
 `;

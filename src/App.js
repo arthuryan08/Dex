@@ -57,6 +57,26 @@ export const App = () => {
           <C.Mockup3 src={Mockup3} />
         </C.Div3d>
       </C.MainContent3>
+      <C.TipsBar>
+        <C.TipContent>
+          <C.TipText1>
+            Are you going to create a website for your business?
+          </C.TipText1>
+          <C.TipText2 href="#">Check out our tips and ideas &#8594;</C.TipText2>
+        </C.TipContent>
+        <C.TipContent>
+          <C.TipText1>
+            What types of websites can I create for my business?
+          </C.TipText1>
+          <C.TipText2 href="#">See more &#8594;</C.TipText2>
+        </C.TipContent>
+        <C.TipContent>
+          <C.TipText1>
+            Website Builder: A solution to start your online presence
+          </C.TipText1>
+          <C.TipText2 href="#">See more &#8594;</C.TipText2>
+        </C.TipContent>
+      </C.TipsBar>
     </C.Container>
   );
 };
