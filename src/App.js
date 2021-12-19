@@ -1,6 +1,7 @@
 import React from "react";
 import * as C from "./AppStyles";
 
+import { SideBar } from "./components/SideBar";
 import { Header } from "./components/Header";
 import { Button } from "./components/Button";
 
@@ -17,6 +18,7 @@ import LinkedinIcon from "./assets/linkedin.svg";
 export const App = () => {
   return (
     <C.Container>
+      <SideBar />
       <Header />
       <C.MainContent1>
         <C.ContentTextArea>
@@ -104,20 +106,22 @@ export const App = () => {
           <C.LogoArea>
             <C.Logo src={Logo} />
             <C.LogoText>
-              Have a question? We're here to help.<br/>Call us at 000-123-4567
+              Have a question? We're here to help.
+              <br />
+              Call us at 000-123-4567
             </C.LogoText>
           </C.LogoArea>
           <C.SocialArea>
-            <C.Link href='#'>
+            <C.Link href="#">
               <C.Icon src={FacebookIcon} />
             </C.Link>
-            <C.Link href='#'>
+            <C.Link href="#">
               <C.Icon src={InstagramIcon} />
             </C.Link>
-            <C.Link href='#'>
+            <C.Link href="#">
               <C.Icon src={TwitterIcon} />
             </C.Link>
-            <C.Link href='#'>
+            <C.Link href="#">
               <C.Icon src={LinkedinIcon} />
             </C.Link>
             <C.LogoText>Ⓒ 2021 DEX | All Rights Reserved</C.LogoText>
@@ -125,40 +129,40 @@ export const App = () => {
         </C.FooterDivLogo>
         <C.FooterDivInfo>
           <C.DivInfoTitle>Product &amp; Pricing</C.DivInfoTitle>
-          <C.DivInfoContent href='#'>Features</C.DivInfoContent>
-          <C.DivInfoContent href='#'>Vizualizations</C.DivInfoContent>
-          <C.DivInfoContent href='#'>Dashboad</C.DivInfoContent>
-          <C.DivInfoContent href='#'>Pricing</C.DivInfoContent>
-          <C.DivInfoContent href='#'>Premium Plans</C.DivInfoContent>
-          <C.DivInfoContent href='#'>New Releases Notes</C.DivInfoContent>
+          <C.DivInfoContent href="#">Features</C.DivInfoContent>
+          <C.DivInfoContent href="#">Vizualizations</C.DivInfoContent>
+          <C.DivInfoContent href="#">Dashboad</C.DivInfoContent>
+          <C.DivInfoContent href="#">Pricing</C.DivInfoContent>
+          <C.DivInfoContent href="#">Premium Plans</C.DivInfoContent>
+          <C.DivInfoContent href="#">New Releases Notes</C.DivInfoContent>
         </C.FooterDivInfo>
         <C.FooterDivInfo>
           <C.DivInfoTitle>Learn</C.DivInfoTitle>
-          <C.DivInfoContent href='#'>Summary</C.DivInfoContent>
-          <C.DivInfoContent href='#'>Getting Started</C.DivInfoContent>
-          <C.DivInfoContent href='#'>Help Center</C.DivInfoContent>
-          <C.DivInfoContent href='#'>Resources</C.DivInfoContent>
-          <C.DivInfoContent href='#'>FAQs</C.DivInfoContent>
-          <C.DivInfoContent href='#'>Developers</C.DivInfoContent>
+          <C.DivInfoContent href="#">Summary</C.DivInfoContent>
+          <C.DivInfoContent href="#">Getting Started</C.DivInfoContent>
+          <C.DivInfoContent href="#">Help Center</C.DivInfoContent>
+          <C.DivInfoContent href="#">Resources</C.DivInfoContent>
+          <C.DivInfoContent href="#">FAQs</C.DivInfoContent>
+          <C.DivInfoContent href="#">Developers</C.DivInfoContent>
         </C.FooterDivInfo>
         <C.FooterDivInfo>
           <C.DivInfoTitle>Account</C.DivInfoTitle>
-          <C.DivInfoContent href='#'>My Products</C.DivInfoContent>
-          <C.DivInfoContent href='#'>Renewal and Billing</C.DivInfoContent>
-          <C.DivInfoContent href='#'>Create Account</C.DivInfoContent>
-          <C.DivInfoContent href='#'></C.DivInfoContent>
-          <C.DivInfoContent href='#'></C.DivInfoContent>
-          <C.DivInfoContent href='#'></C.DivInfoContent>
-          <C.DivInfoContent href='#'></C.DivInfoContent>
+          <C.DivInfoContent href="#">My Products</C.DivInfoContent>
+          <C.DivInfoContent href="#">Renewal and Billing</C.DivInfoContent>
+          <C.DivInfoContent href="#">Create Account</C.DivInfoContent>
+          <C.DivInfoContent href="#"></C.DivInfoContent>
+          <C.DivInfoContent href="#"></C.DivInfoContent>
+          <C.DivInfoContent href="#"></C.DivInfoContent>
+          <C.DivInfoContent href="#"></C.DivInfoContent>
         </C.FooterDivInfo>
         <C.FooterDivInfo>
           <C.DivInfoTitle>Company</C.DivInfoTitle>
-          <C.DivInfoContent href='#'>About Us</C.DivInfoContent>
-          <C.DivInfoContent href='#'>Carrers</C.DivInfoContent>
-          <C.DivInfoContent href='#'>Partners</C.DivInfoContent>
-          <C.DivInfoContent href='#'>Contact Us</C.DivInfoContent>
-          <C.DivInfoContent href='#'>Privacy Policy</C.DivInfoContent>
-          <C.DivInfoContent href='#'>Terms of Use</C.DivInfoContent>
+          <C.DivInfoContent href="#">About Us</C.DivInfoContent>
+          <C.DivInfoContent href="#">Carrers</C.DivInfoContent>
+          <C.DivInfoContent href="#">Partners</C.DivInfoContent>
+          <C.DivInfoContent href="#">Contact Us</C.DivInfoContent>
+          <C.DivInfoContent href="#">Privacy Policy</C.DivInfoContent>
+          <C.DivInfoContent href="#">Terms of Use</C.DivInfoContent>
         </C.FooterDivInfo>
       </C.Footer>
     </C.Container>

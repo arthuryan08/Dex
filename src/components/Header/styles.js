@@ -23,6 +23,12 @@ export const Header = styled.header`
     width: 75%;
     padding: 0 12px 20px 12px;
   }
+  @media ${device.mobileL} {
+    width: 425px;
+  }
+  @media ${device.mobileS} {
+    width: 320px;
+  }
 `;
 export const Logo = styled.img`
   height: 57px;
@@ -31,10 +37,14 @@ export const Logo = styled.img`
     height: 40px;
   }
 `;
+
 export const NavBar = styled.nav`
   justify-content: center;
   display: flex;
   flex: 2;
+  @media ${device.mobileL} {
+    display: none;
+  }
 `;
 export const NavBarLink = styled.a`
   margin: 0 3%;
@@ -49,7 +59,7 @@ export const NavBarLink = styled.a`
     font-size: 18px;
   }
   @media ${device.tablet} {
-    font-size: 22px;
+    font-size: 19px;
     margin: 0 1%;
   }
 `;

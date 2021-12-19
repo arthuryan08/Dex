@@ -16,7 +16,7 @@ export const Header = () => {
         <C.NavBarLink href="#">ABOUT US</C.NavBarLink>
         <C.NavBarLink href="#">SUPORT</C.NavBarLink>
       </C.NavBar>
-      <Button>GET STARTED</Button>
+      <Button none>GET STARTED</Button>
     </C.Header>
   );
 };
