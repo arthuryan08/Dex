@@ -3,9 +3,11 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import { App } from "./App";
 
+import Dashboad from "./pages/Dashboard/Dashboard";
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Dashboad />
   </React.StrictMode>,
   document.getElementById("root")
 );
