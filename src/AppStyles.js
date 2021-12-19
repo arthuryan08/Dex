@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "./device";
 
 export const Container = styled.div`
   min-height: 100vh;
@@ -14,6 +15,10 @@ export const MainContent1 = styled.main`
     radial-gradient(farthest-corner at 51px 41px, #ffffff 0%, #dedede 100%) 0%
     0% no-repeat padding-box;
   display: flex;
+  @media ${device.tablet} {
+    height: 500px;
+    width: 768px;
+  }
 `;
 
 export const ContentTextArea = styled.div`
@@ -24,22 +29,55 @@ export const ContentTextArea = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 70px 0 0 70px;
+
+  @media ${device.laptop} {
+    padding: 70px 0 0 50px;
+  }
+  @media ${device.tablet} {
+    width: 35%;
+    align-items: center;
+    padding: 30px 0 0 50px;
+    height: 420px;
+  }
 `;
 export const Text1 = styled.p`
   font-size: 55px;
   font-weight: bold;
   color: #111111;
+  margin-bottom: 20px;
+  @media ${device.tablet} {
+    width: 700px;
+    margin-left: 390px;
+  }
 `;
 export const Text2 = styled.p`
   font-size: 20px;
   font-family: "Avant Garde BQ", sans-serif;
   padding-right: 98px;
+  margin-bottom: 20px;
+  @media ${device.tablet} {
+    width: 120%;
+    margin-left: 60px;
+  }
 `;
 
 export const Mockup1 = styled.img`
   width: 789px;
   height: 562px;
-  margin-top: 70px;
+  top: 164px;
+  right: 0%;
+  position: absolute;
+  @media ${device.laptop} {
+    width: 739px;
+    height: 512px;
+    right: 0%;
+  }
+  @media ${device.tablet} {
+    top: 280px;
+    right: 20px;
+    width: 500px;
+    height: 330px;
+  }
 `;
 
 // main content 2
@@ -52,12 +90,33 @@ export const MainContent2 = styled.div`
   padding: 60px 20px;
   align-items: center;
   justify-content: space-between;
+
+  @media ${device.laptop}{
+    padding: 60px 0;
+  }
+  @media ${device.tablet} {
+    width: 75%;
+    height: 450px;
+    padding: 10px;
+  }
 }
 
 `;
 
 export const Mockup2 = styled.img`
   height: 435px;
+  margin-left: 70px;
+
+  @media ${device.laptop} {
+    height: 385;
+    margin-left: 40px;
+  }
+  @media ${device.tablet} {
+    height: 300px;
+    position: absolute;
+    top: 700px;
+    left: -20px;
+  }
 `;
 export const ContentTextArea2 = styled.div`
   display: flex;
@@ -67,6 +126,34 @@ export const ContentTextArea2 = styled.div`
   padding: 80px 40px 40px 40px;
   width: 43%;
   height: 480px;
+  @media ${device.laptop} {
+    padding: 30px 0 30px 20px;
+  }
+  @media ${device.tablet} {
+    margin-left: 430px;
+    height: 350px;
+    padding: 0;
+  }
+`;
+export const Text3 = styled.p`
+  font-size: 55px;
+  font-weight: bold;
+  color: #111111;
+  margin-bottom: 20px;
+  @media ${device.tablet} {
+    width: 700px;
+    margin-left: -300px;
+  }
+`;
+export const Text4 = styled.p`
+  font-size: 20px;
+  font-family: "Avant Garde BQ", sans-serif;
+  padding-right: 98px;
+  margin-bottom: 20px;
+  @media ${device.tablet} {
+    width: 100%;
+    padding: 0 10px;
+  }
 `;
 
 // main content 3
@@ -80,6 +167,16 @@ export const MainContent3 = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0 132px;
+
+  @media ${device.laptop} {
+    padding: 0 70px;
+    height: 496;
+  }
+  @media ${device.tablet} {
+    padding: 0 9px;
+    width: 768px;
+    height: 537px;
+  }
 `;
 export const ContentTextArea3 = styled.div`
   display: flex;
@@ -87,14 +184,55 @@ export const ContentTextArea3 = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   width: 46%;
-  height: 434px;
+  height: 561px;
+
+  @media ${device.laptop} {
+    height: 450px;
+  }
+  @media ${device.tablet} {
+    height: 471px;
+    width: 50%;
+    align-items: center;
+  }
 `;
+export const Text5 = styled.p`
+  font-size: 55px;
+  font-weight: bold;
+  color: #111111;
+  margin-bottom: 20px;
+  @media ${device.tablet} {
+    width: 700px;
+    margin-left: 406px;
+  }
+`;
+export const Text6 = styled.p`
+  font-size: 20px;
+  font-family: "Avant Garde BQ", sans-serif;
+  padding-right: 98px;
+  margin-bottom: 20px;
+  @media ${device.tablet} {
+    width: 90%;
+    margin-left: 53px;
+    padding: 0;
+  }
+`;
+
 export const Div3d = styled.div`
   width: 409px;
   height: 559px;
   perspective: 1000px;
   position: absolute;
   right: 10%;
+
+  @media ${device.laptop} {
+    right: 5%;
+  }
+  @media ${device.tablet} {
+    width: 220px;
+    height: 341px;
+    right: 10%;
+    top: 1198px;
+  }
 `;
 
 export const Mockup3 = styled.img`
@@ -102,13 +240,25 @@ export const Mockup3 = styled.img`
   height: 100%;
   transform-style: preserve-3d;
   transform: rotate3d(1, -9, 1, 35deg);
+  @media ${device.tablet} {
+    width: 203px;
+  }
 `;
 export const Case = styled.img`
   position: absolute;
   z-index: 1;
-  width: 410px;
-  top: 1248px;
+  width: 414px;
+  top: 1250px;
   right: 10%;
+
+  @media ${device.laptop} {
+    right: 5%;
+  }
+  @media ${device.tablet} {
+    width: 244px;
+    right: 55px;
+    top: 1182px;
+  }
 `;
 
 //TipsBar
@@ -122,6 +272,9 @@ export const TipsBar = styled.div`
   padding: 30px;
   color: #ffffff;
   z-index: 2;
+  @media ${device.tablet} {
+    width: 768px;
+  }
 `;
 export const TipContent = styled.div`
   display: flex;
@@ -129,6 +282,10 @@ export const TipContent = styled.div`
   justify-content: space-between;
   width: 306px;
   height: 90px;
+  @media ${device.tablet} {
+    padding: 10px;
+    height: 150px;
+  }
 `;
 export const TipText1 = styled.p`
   font-size: 19px;
@@ -146,6 +303,9 @@ export const SignUpArea = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media ${device.tablet} {
+    width: 768px;
+  }
 `;
 export const SignUpText1 = styled.p`
   font-size: 55px;
@@ -217,6 +377,13 @@ export const Footer = styled.footer`
   color: #c4c4c4;
   justify-content: space-between;
   padding: 50px 70px 20px 70px;
+  @media ${device.laptop} {
+    padding: 40px 40px 26px 40px;
+  }
+  @media ${device.tablet} {
+    width: 768px;
+    height: 255px;
+  }
 `;
 export const FooterDivLogo = styled.div`
   display: flex;
@@ -255,6 +422,9 @@ export const DivInfoTitle = styled.p`
   color: #ffffff;
   font-size: 20px;
   font-weight: bold;
+  @media ${device.tablet} {
+    font-size: 14px;
+  }
 `;
 
 export const DivInfoContent = styled.a`
@@ -264,5 +434,8 @@ export const DivInfoContent = styled.a`
   color: #c4c4c4;
   &:hover {
     color: #ffffff;
+  }
+  @media ${device.tablet} {
+    font-size: 12px;
   }
 `;

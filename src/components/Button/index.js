@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import  { device } from '../../device'
 
 const PersoButton = styled.button`
   color: ${(props) => props.TxtColor && `#FFFFFF`};
@@ -14,6 +15,9 @@ const PersoButton = styled.button`
   margin-left: ${(props) => props.color && "20px"};
   &:hover {
     filter: brightness(90%);
+  }
+  @media ${device.tablet}{
+    font-size: 15px;
   }
 `;
 

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../device";
 
 export const Container = styled.div`
   min-height: 100vh;
@@ -14,10 +15,21 @@ export const Header = styled.header`
   align-items: flex-end;
   background-color: #111111;
   position: relative;
+
+  @media ${device.laptop} {
+    padding: 12px 50px;
+  }
+  @media ${device.tablet} {
+    width: 75%;
+    padding: 0 12px 20px 12px;
+  }
 `;
 export const Logo = styled.img`
   height: 57px;
   width: 138px;
+  @media ${device.tablet} {
+    height: 40px;
+  }
 `;
 export const NavBar = styled.nav`
   justify-content: center;
@@ -33,25 +45,11 @@ export const NavBarLink = styled.a`
   &:hover {
     border-bottom: 2px solid #c4c4c4;
   }
-`;
-export const ProfileButton = styled.button`
-  background: none;
-  border: none;
-  display: flex;
-  align-items: center;
-  color: #5a5a5a;
-  cursor: pointer;
-`;
-export const ProfileImg = styled.div`
-  height: 31px;
-  width: 31px;
-`;
-export const ProfileSVG = styled.svg`
-  path {
-    fill: #5a5a5a;
+  @media ${device.laptop} {
+    font-size: 18px;
   }
-`;
-export const ProfileText = styled.p`
-  font-size: 19px;
-  margin-left: 7px;
+  @media ${device.tablet} {
+    font-size: 22px;
+    margin: 0 1%;
+  }
 `;
