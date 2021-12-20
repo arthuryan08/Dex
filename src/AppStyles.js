@@ -379,10 +379,10 @@ export const Div3d = styled.div`
     right: 5%;
   }
   @media ${device.tablet} {
-    width: 220px;
-    height: 341px;
+    width: 214px;
+    height: 298px;
     right: 10%;
-    top: 1198px;
+    top: 1237px;
   }
   @media ${device.mobileL} {
     width: 247px;
@@ -410,7 +410,7 @@ export const Mockup3 = styled.img`
   transform-style: preserve-3d;
   transform: rotate3d(1, -9, 1, 35deg);
   @media ${device.tablet} {
-    width: 203px;
+    width: 179px;
   }
   @media ${device.mobileL} {
     width: 202px;
@@ -428,9 +428,9 @@ export const Case = styled.img`
     right: 5%;
   }
   @media ${device.tablet} {
-    width: 244px;
-    right: 55px;
-    top: 1182px;
+    width: 211px;
+    right: 77px;
+    top: 1227px;
   }
   @media ${device.mobileL} {
     width: 221px;
@@ -552,6 +552,9 @@ export const SignUpText1 = styled.p`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media ${device.mobileL} {
+      margin-left: 90px;
+    }
     @media ${device.mobileM} {
       margin-left: 90px;
     }

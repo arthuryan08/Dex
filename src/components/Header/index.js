@@ -5,7 +5,7 @@ import { Button } from "../../components/Button";
 
 import Logo from "../../assets/logo.svg";
 
-export const Header = () => {
+export const Header = ({ noButton }) => {
   return (
     <C.Header>
       <C.Logo src={Logo} />
@@ -16,7 +16,7 @@ export const Header = () => {
         <C.NavBarLink href="#">ABOUT US</C.NavBarLink>
         <C.NavBarLink href="#">SUPORT</C.NavBarLink>
       </C.NavBar>
-      <Button none>GET STARTED</Button>
+      {noButton ? "" : <Button none>GET STARTED</Button>}
     </C.Header>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import * as C from "./AppStyles";
+import { useHistory } from "react-router-dom";
 
 import { SideBar } from "./components/SideBar";
 import { Header } from "./components/Header";
@@ -16,6 +17,12 @@ import TwitterIcon from "./assets/twitter.svg";
 import LinkedinIcon from "./assets/linkedin.svg";
 
 export const App = () => {
+  const history = useHistory();
+
+  const handleCreatePage = () => {
+    history.push("/step1");
+  };
+
   return (
     <C.Container>
       <SideBar />
@@ -27,7 +34,7 @@ export const App = () => {
             Dex is the easiest way for those who need a fast website in a super
             practical way. So, let's create a website?
           </C.Text2>
-          <Button BGColor TxtColor>
+          <Button BGColor TxtColor onClick={handleCreatePage}>
             GET STARTED
           </Button>
         </C.ContentTextArea>

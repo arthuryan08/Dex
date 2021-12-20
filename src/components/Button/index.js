@@ -24,10 +24,15 @@ const PersoButton = styled.button`
   }
 `;
 
-export const Button = ({ children, TxtColor, BGColor, none }) => {
+export const Button = ({ children, TxtColor, BGColor, none, onClick }) => {
   return (
     <>
-      <PersoButton TxtColor={TxtColor} BGColor={BGColor} none={none}>
+      <PersoButton
+        TxtColor={TxtColor}
+        BGColor={BGColor}
+        none={none}
+        onClick={onClick}
+      >
         {children}
       </PersoButton>
     </>
