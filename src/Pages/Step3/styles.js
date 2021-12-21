@@ -1,10 +1,14 @@
 import styled from "styled-components";
+import { device } from "../../device";
 
 export const Container = styled.div`
   font-family: "Avant Garde BQ", sans-serif;
   p {
     font-size: 17px;
     color: #ababab;
+  }
+  @media ${device.mobileM} {
+    height: 710px;
   }
 `;
 
@@ -18,13 +22,18 @@ export const Area2 = styled.div`
   height: 300px;
   display: flex;
   justify-content: center;
+  @media ${device.mobileM} {
+    display: flex;
+    flex-direction: column;
+    height: 473px;
+  }
 `;
 
 export const Title1 = styled.h1`
   text-align: center;
   z-index: 20;
-  text {
-    color: #0dc90a;
+  @media ${device.mobileM} {
+    font-size: 23px;
   }
 `;
 
@@ -64,7 +73,6 @@ export const ButtonBack = styled.button`
     height: 100%;
     z-index: 0;
   }
-
   &::before {
     content: "";
     background: #000;
@@ -75,6 +83,9 @@ export const ButtonBack = styled.button`
   }
   &:hover::before {
     transform: translate3d(100%, 0, 0);
+  }
+  @media ${device.mobileM} {
+    bottom: -222px;
   }
 `;
 
@@ -113,6 +124,9 @@ export const ButtonNext = styled.button`
     width: 100%;
     height: 100%;
     z-index: 0;
+  }
+  @media ${device.mobileM} {
+    bottom: -222px;
   }
 
   &::before {
@@ -155,5 +169,10 @@ export const Input = styled.input`
   ::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
+  }
+  @media ${device.mobileM} {
+    width: 320px;
+    margin-bottom: 15px;
+    height: 40px;
   }
 `;

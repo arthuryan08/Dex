@@ -16,7 +16,6 @@ const PersoButton = styled.button`
   -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   transition: all 250ms;
-  overflow: hidden;
   background: ${(props) => (props.BGColor ? `transparent` : "#111111")};
   margin-left: ${(props) => props.color && "20px"};
   &::before {

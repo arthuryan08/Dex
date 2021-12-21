@@ -7,7 +7,7 @@ export const Theme = ({ children }) => {
   return (
     <C.Container>
       <Header noButton />
-
+      <SideBar />
       <C.Area>
         <C.Steps>
           <C.Sidebar>

@@ -9,7 +9,6 @@ export const Container = styled.div`
   overflow-x: hidden;
   @media ${device.laptop} {
     width: 1024px;
-    height: 784px;
   }
   @media ${device.tablet} {
     width: 768px;
@@ -224,8 +223,11 @@ export const ContentTextArea2 = styled.div`
     padding: 0;
   }
   @media ${device.mobileL} {
+    height: 291px;
+  }
+  @media ${device.mobileL} {
     padding: 25px;
-    height: 342px;
+    height: 258px;
     margin: 0;
     width: 100%;
   }
@@ -345,7 +347,7 @@ export const Text5 = styled.p`
   }
   @media ${device.mobileL} {
     margin: 0;
-    font-size: 33px;
+    font-size: 32px;
     width: 100%;
     padding: 0;
   }
@@ -508,6 +510,9 @@ export const TipText1 = styled.p`
 export const TipText2 = styled.a`
   text-decoration: none;
   color: #ffffff;
+  &:hover {
+    color: #0dc90a;
+  }
   @media ${device.mobileL} {
     font-size: 12px;
   }

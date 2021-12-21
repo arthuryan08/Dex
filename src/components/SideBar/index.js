@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { device } from "../../device";
+import { Link } from "react-router-dom";
 
 export const BtnMenu = styled.input.attrs({ type: "checkbox" })`
   display: none;
@@ -26,6 +27,7 @@ export const SideBarArea = styled.div`
   position: fixed;
   width: 253px;
   height: 435px;
+  top: 0;
   right: ${(props) => (props.checked ? "0" : "-253px")};
   background-color: #111111;
   z-index: 80;
@@ -41,7 +43,7 @@ export const SideBarArea = styled.div`
   }
 `;
 
-export const NavLinks = styled.a`
+export const NavLinks = styled(Link)`
   font-size: 25px;
   margin: 10px 0;
   text-decoration: none;
@@ -74,7 +76,7 @@ export const SideBar = () => {
       <BtnMenu checked={checked} onChange={handleCheckboxChange} id="bt_menu" />
       <BtnMenuIcon for="bt_menu">&#9776;</BtnMenuIcon>
       <SideBarArea checked={checked}>
-        <NavLinks href="#">HOME</NavLinks>
+        <NavLinks to={"/"}>HOME</NavLinks>
         <NavLinks href="#">FEATURES</NavLinks>
         <NavLinks href="#">TEMPLATES</NavLinks>
         <NavLinks href="#">ABOUT US</NavLinks>
