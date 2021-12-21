@@ -14,7 +14,11 @@ body {
 
   overflow-x: hidden;
 }
-
+@media (max-width: 375px) {
+  body {
+    background-color: #e3e3e3;
+  }
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

@@ -1,16 +1,23 @@
 import styled from "styled-components";
+import { device } from "../../device";
 
 export const Container = styled.div`
   font-family: "Avant Garde BQ", sans-serif;
   p {
     font-size: 17px;
-    color: #b8b8d4;
+    color: #ababab;
+  }
+  @media ${device.mobileM} {
+    height: 604px;
   }
 `;
 
 export const ButtonArea = styled.div`
   display: flex;
   justify-content: space-evenly;
+  @media ${device.mobileM} {
+    flex-wrap: wrap;
+  }
 `;
 
 export const Option = styled.input.attrs({ type: "checkbox" })`
@@ -40,6 +47,11 @@ export const OptionBtn = styled.label`
   &:active {
     transform: translateY(-1px);
   }
+  @media ${device.mobileM} {
+    padding: 1.1em 1.1em;
+    margin-top: 5px;
+    flex-wrap: wrap;
+  }
 `;
 
 export const Area1 = styled.div`
@@ -47,18 +59,37 @@ export const Area1 = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  p {
+    @media ${device.mobileM} {
+      margin-left: 15px;
+    }
+  }
+  @media ${device.mobileM} {
+    height: 325px;
+    margin: -15px;
+  }
 `;
 export const Area2 = styled.div`
   height: 213px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  @media ${device.mobileM} {
+    height: 187px;
+    margin: -15px;
+  }
 `;
 export const Title1 = styled.h1`
   text-align: center;
+  @media ${device.mobileM} {
+    font-size: 23px;
+  }
 `;
 export const Title2 = styled.h1`
   text-align: center;
+  @media ${device.mobileM} {
+    font-size: 23px;
+  }
 `;
 
 export const ButtonNext = styled.button`
@@ -80,6 +111,10 @@ export const ButtonNext = styled.button`
   overflow: hidden;
   background: #0dc90a;
   color: ghostwhite;
+  @media ${device.mobileM} {
+    right: 30px;
+    bottom: -101px;
+  }
   span {
     position: relative;
     z-index: 10;

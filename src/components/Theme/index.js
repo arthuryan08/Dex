@@ -1,11 +1,13 @@
 import * as C from "./styles";
 import { Header } from "../Header";
 import { SidebarItem } from "../SidebarItem";
+import { SideBar } from "../SideBar";
 
 export const Theme = ({ children }) => {
   return (
     <C.Container>
       <Header noButton />
+
       <C.Area>
         <C.Steps>
           <C.Sidebar>

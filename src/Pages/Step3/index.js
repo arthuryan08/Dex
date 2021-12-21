@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import * as C from "./styles";
 import { Theme } from "../../components/Theme";
 import { useHistory } from "react-router-dom";

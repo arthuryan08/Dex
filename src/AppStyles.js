@@ -9,6 +9,7 @@ export const Container = styled.div`
   overflow-x: hidden;
   @media ${device.laptop} {
     width: 1024px;
+    height: 784px;
   }
   @media ${device.tablet} {
     width: 768px;

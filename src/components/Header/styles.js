@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { device } from "../../device";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   min-height: 100vh;
@@ -26,6 +27,9 @@ export const Header = styled.header`
   @media ${device.mobileL} {
     width: 425px;
   }
+  @media ${device.mobileM} {
+    width: 375px;
+  }
   @media ${device.mobileS} {
     width: 320px;
   }
@@ -46,7 +50,7 @@ export const NavBar = styled.nav`
     display: none;
   }
 `;
-export const NavBarLink = styled.a`
+export const NavBarLink = styled(Link)`
   margin: 0 3%;
   font-size: 15px;
   text-decoration: none;

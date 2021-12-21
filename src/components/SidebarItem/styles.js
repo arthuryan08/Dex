@@ -10,11 +10,11 @@ export const Container = styled.div`
     align-items: center;
     text-decoration: none;
     @media ${device.mobileM} {
-      width: 375px;
+      flex-direction: column;
     }
   }
   @media ${device.mobileM} {
-    width: 375px;
+    width: 38%;
     margin: 0;
     padding: 0;
   }
@@ -25,7 +25,6 @@ export const Info = styled.div`
   margin-right: 20px;
   @media ${device.mobileM} {
     margin: 0;
-    width: 375px;
   }
 `;
 
@@ -39,7 +38,6 @@ export const Title = styled.div`
     text-align: center;
     font-size: 25px;
     width: 375px;
-    place-items: center;
   }
 `;
 
@@ -65,9 +63,6 @@ export const IconArea = styled.div`
     box-shadow: 0px 10px 25px rgba(49, 229, 157, 0.4);
   }
   @media ${device.mobileM} {
-    position: absolute;
-    top: 35px;
-    left: 20px;
   }
 `;
 
@@ -81,6 +76,6 @@ export const Point = styled.div`
   background-color: ${(props) =>
     props.active === props.step ? "#0dc90a" : "#d3d3d3"};
   @media ${device.mobileM} {
-    display: none;
+    margin: 8px 0 0 0;
   }
 `;

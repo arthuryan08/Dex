@@ -4,7 +4,7 @@ export const Container = styled.div`
   font-family: "Avant Garde BQ", sans-serif;
   p {
     font-size: 17px;
-    color: #111111;
+    color: #ababab;
   }
 `;
 
@@ -140,6 +140,7 @@ export const InputArea = styled.div`
 export const InputText = styled.p`
   font-size: 20px;
   margin-bottom: 5px;
+  color: #111111 !important;
 `;
 
 export const Input = styled.input`
